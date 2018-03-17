@@ -1,7 +1,7 @@
 {
   "name": "react-ref-method-forwarder",
   "version": "1.0.0",
-  "description": "Allows method accessing through refs for components that are wrapped with HOCs",
+  "description": "Allows accessing methods of HOC-wrapped components through normal React refs",
   "author": "elado",
   "license": "MIT",
   "repository": "elado/react-ref-method-forwarder",
