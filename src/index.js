@@ -1,7 +1,3 @@
-/**
- * @class ExampleComponent
- */
-
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
@@ -10,7 +6,7 @@ const CONTEXT_TYPES = {
 }
 
 export const forwardMethodsOuter = ({ methods }) => WrappedComponent => {
-  class WithForwardedMethodsOuter extends React.Component {
+  class WithForwardedMethodsOuter extends Component {
     callbacksByMethod = {}
 
     static childContextTypes = CONTEXT_TYPES
@@ -47,7 +43,7 @@ export const forwardMethodsOuter = ({ methods }) => WrappedComponent => {
 }
 
 export const forwardMethodsInner = () => WrappedComponent => {
-  class WithForwardedMethodsInner extends React.Component {
+  class WithForwardedMethodsInner extends Component {
     static contextTypes = CONTEXT_TYPES
 
     componentDidMount() {
