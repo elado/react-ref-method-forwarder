@@ -169,6 +169,18 @@ class App extends Component {
 }
 ```
 
+### Usage with Decorators
+
+```jsx
+@forwardMethodsOuter({ methods: ["focusInput"] })
+@myHOC
+// more HOCs here
+@forwardMethodsInner()
+class Field extends Component {
+  // ...
+}
+```
+
 ## License
 
 MIT © [elado](https://github.com/elado)
