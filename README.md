@@ -120,6 +120,8 @@ This library provides 2 HOCs: `forwardMethodsInner` and `forwardMethodsOuter`. T
 ```jsx
 // Field.js
 
+import { forwardMethodsOuter, forwardMethodsInner } from 'react-ref-method-forwarder'
+
 // 1st step - a Component with a method
 class Field extends Component {
   focusInput() {
